@@ -20,7 +20,6 @@ class PartyCrew:
 
     venue_selector_agent = agents.venue_selection_agent()
     party_planner_agent = agents.party_planner()
-    # entertainment_agent = agents.entertainment_expert()
 
     identify_task = tasks.identify_party_task(
       venue_selector_agent,
@@ -35,13 +34,6 @@ class PartyCrew:
       self.theme,
       self.date_range
     )
-    # entertainment_task = tasks.gather_party_task(
-    #   entertainment_agent,
-    #   self.location,
-    #   self.guests,
-    #   self.theme,
-    #   self.date_range
-    # )
 
     crew = Crew(
       agents=[

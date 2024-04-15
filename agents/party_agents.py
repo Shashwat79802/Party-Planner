@@ -21,19 +21,6 @@ class PartyAgents():
                 verbose=True)
 
 
-#     def entertainment_expert(self):
-#         return Agent(
-#                 role='Entertainment Expert',
-#                 goal='Provide the BEST entertainment options for the party',
-#                 backstory="""A knowledgeable expert with extensive information
-#                 about various entertainment choices""",
-#                 tools=[
-#                         SearchTools.search_internet,
-#                         BrowserTools.scrape_and_summarize_website,
-#                 ],
-#                 verbose=True)
-
-
     def party_planner(self):
         return Agent(
                 role='Party Planner Extraordinaire',

@@ -26,26 +26,6 @@ class PartyTasks():
                 agent=agent)
 
 
-    # def gather_party_task(self, agent, location, theme, budget):
-    #   return Task(description=dedent(f"""
-    #     As a party planning expert, you must gather information
-    #     about the best party supplies, decorations, entertainment,
-    #     and food options for the chosen theme and budget. Create
-    #     a comprehensive guide that includes recommendations for
-    #     party supplies stores, decoration ideas, entertainment
-    #     options, and catering services.
-        
-    #     The final answer must be a detailed party guide, providing
-    #     insights and practical tips to enhance the party experience.
-    #     {self.__tip_section()}
-
-    #     Party Location: {location}
-    #     Party Theme: {theme}
-    #     Budget: {budget}
-    #   """),
-    #             agent=agent)
-
-
     def plan_party_task(self, agent, location, theme, guests, date_range):
       return Task(description=dedent(f"""
         Expand the party guide into a detailed party itinerary
